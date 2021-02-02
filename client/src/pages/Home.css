@@ -1,0 +1,50 @@
+.home{
+  min-height: 400px;
+  width: 400px;
+  padding: 30px;
+}
+.home__alert{
+    margin-top: 10px;
+}
+.home__form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.home__countryTags{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.home__countryTagsTag{
+    background-color: rgb(197, 197, 197);
+    color: rgb(70, 70, 70);
+    font-weight: 600;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+.closeIcon{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    color: #d11a2a;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.home__countryTagsAddTag{
+    margin-top: 25px;
+}
+.home button {
+    margin-top: 25px;
+}
+.home__searchPopUp{
+    position: fixed;
+}
+.home__searchPopUp__hide{
+    display: none;
+}

@@ -1,0 +1,37 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rkRiaz/First-E-Commerce-website-from-png.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rkRiaz/First-E-Commerce-website-from-png/issues"
+  },
+  "homepage": "https://github.com/rkRiaz/First-E-Commerce-website-from-png#readme",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "config": "^3.3.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.0",
+    "mongoose": "^5.9.26"
+  },
+  "engines": {
+    "node": "12.16.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
